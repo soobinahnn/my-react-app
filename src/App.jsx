@@ -36,7 +36,9 @@ function Board() {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <div className="status" role="status" aria-live="polite">
+        {status}
+      </div>
 
       <div className="board-row">
         <Square value={squares[0]} position={1} onSquareClick={() => handleClick(0)} />
