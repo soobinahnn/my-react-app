@@ -1,4 +1,3 @@
-
 import './App.css'
 
 function Square() {
@@ -7,15 +6,23 @@ function Square() {
 
 function App() {
   return (
-    <div>
-      <h1>Hello World!</h1>
-      <p>My first React application.</p>
+    <>
       <div className="board-row">
         <Square />
         <Square />
         <Square />
       </div>
-    </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+    </>
   )
 }
 
