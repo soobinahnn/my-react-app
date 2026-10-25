@@ -1,3 +1,4 @@
+import calculateWinner from './calculateWinner';
 import { useState } from 'react';
 import './App.css';
 
