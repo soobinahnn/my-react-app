@@ -10,7 +10,11 @@ function App() {
     <div>
       <h1>Hello World!</h1>
       <p>My first React application.</p>
-      <Square />
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
     </div>
   )
 }
