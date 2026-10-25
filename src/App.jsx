@@ -5,7 +5,11 @@ import calculateWinner from './calculateWinner';
 
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    <button
+      className="square"
+      onClick={onSquareClick}
+      aria-label={value ? `Square marked ${value}` : 'Empty square'}
+    >
       {value}
     </button>
   );
