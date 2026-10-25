@@ -13,6 +13,10 @@ function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   function handleClick(i) {
+    if (squares[i]) {
+      return;
+    }
+
     const nextSquares = squares.slice();
     nextSquares[i] = "X";
     setSquares(nextSquares);
