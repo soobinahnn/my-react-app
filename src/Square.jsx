@@ -1,10 +1,10 @@
 
-export default function Square({ value, onSquareClick }) {
+export default function Square({ value, onSquareClick, position }) {
   return (
     <button
       className="square"
       onClick={onSquareClick}
-      aria-label={value ? `Square marked ${value}` : 'Empty square'}
+      aria-label={`Square ${position}: ${value || 'empty'}`}
     >
       {value}
     </button>
