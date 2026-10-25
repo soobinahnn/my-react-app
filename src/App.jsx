@@ -2,18 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import calculateWinner from './calculateWinner';
-
-function Square({ value, onSquareClick }) {
-  return (
-    <button
-      className="square"
-      onClick={onSquareClick}
-      aria-label={value ? `Square marked ${value}` : 'Empty square'}
-    >
-      {value}
-    </button>
-  );
-}
+import Square from './Square';
 
 function Board() {
   const [xIsNext, setXIsNext] = useState(true);
